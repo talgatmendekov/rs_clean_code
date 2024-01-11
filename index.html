@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="task-app__header">
+  <header class="task-app__header">
     <img src="./eisenhower-matrix.jpg">
     <a class='task-app__info-link' href="https://goal-life.com/page/method/matrix-eisenhower">Details</a>
-  </div>
-  <div class="main-page-element">
-    <p class='main-page-element__add-section'>
+  </header>
+  
+  <main class="main-page-element">
+    <section class='main-page-element__add-section'>
       <label for="new-task" class="add-item__label">Add Item</label>
       <div class="task-row-wrapper">
         <input id='new-task' class="task-row-wrapper__input" type="text">
         <button class="task-row-wrapper__button">Add</button>
       </div>
-    </p>
+    </section>
+    
     <h3 class="todo__header">Todo</h3>
     <ul id='incomplete-tasks' class="incomplete-tasks__list">
       <li class="task__item">
@@ -37,6 +39,7 @@
         <button class="task__button--delete"><img src="./remove.svg"></button>
       </li>
     </ul>
+    
     <h3 class="completed__header">Completed</h3>
     <ul id="completed-tasks" class="completed-tasks__list">
       <li class="completed-tasks__item">
@@ -47,7 +50,8 @@
         <button class="completed-tasks__button--delete"><img src="./remove.svg"></button>
       </li>
     </ul>
-  </div>
-  <script src="app.js"></script>
+  </main>
+  
+  <script src="app.js" defer></script>
 </body>
 </html>
