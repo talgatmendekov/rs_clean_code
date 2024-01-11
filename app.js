@@ -165,4 +165,4 @@ completedTasksHolder.querySelectorAll('.completed-task-item').forEach(function (
 
 // Prevent creation of empty tasks.
 
-// Change edit to save when you are in edit mode..
+// Change edit to save when you are in edit mode...
